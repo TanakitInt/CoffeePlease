@@ -1,0 +1,208 @@
+﻿<!--
+    HTML code by TanakitInt
+    Copyright (c) 2018 TanakitInt. All rights reserved.
+    "Fair use" applied.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee - Home</title>
+    <meta charset="utf-8" lang="th">
+    <link href="https://fonts.googleapis.com/css?family=Athiti:400,700&amp;subset=thai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="index(), totopcheck()">
+    <!--Home-->
+    <div class=video id="pagetop">
+        <video autoplay="autoplay" loop="loop">
+            <source src="media/Coffee 720p.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        </video>
+        <div id="texthome1">
+            <p id="texthome1"></p>
+        </div>
+        <div id="texthome2">
+            <p id="texthome2"></p>
+        </div>
+        <div class="button" onclick="mainscroll()">
+            <p id="button"></p>
+        </div>
+
+    </div>
+
+    <!--BG1-->
+    <div class="background">
+        <img src="media/Coffee ITKMITL.jpg" id="bg1">
+
+        <div id="bg1-text1">
+            <p>ประโยชน์</p>
+            <p>ของกาแฟ</p>
+        </div>
+
+        <div id="bg1-text2">
+            เรียนรู้เกี่ยวกับประโยชน์ของกาแฟ
+        </div>
+
+        <a href="categories/benefits/benefits.html">
+            <div class="button" id="benefit-button">
+                เรียนรู้เพิ่มเติม
+            </div>
+        </a>
+
+    </div>
+
+    <!--BG2-->
+    <div class="background">
+
+        <div id="bg2-top">
+            <br> ________
+            <br> *
+            <br> 3 ขั้นตอนง่ายๆ
+            <br> กว่าจะมาเป็นกาแฟ
+            <br>
+            <p id="click-on-image">____</p>
+
+        </div>
+
+        <a href="categories/tree/tree.html">
+            <div id="bg2-left" class="bg2-hover">
+                <p class="bg2-text">
+                    <b>
+                        ต้นกาแฟ
+                    </b>
+                    <br>
+                    <i>
+                        เริ่มตั้งแต่ต้นกล้า
+                    </i>
+                </p>
+                <img src="media/leaf.png" class="bg2-pic">
+                <!--
+                <div class="button" id="planting">
+                Go!
+                </div>
+            -->
+            </div>
+        </a>
+
+        <a href="categories/ingredients/ingredients.html">
+            <div id="bg2-center" class="bg2-hover">
+                <p class="bg2-text">
+                    <b>
+                        ส่วนประกอบ
+                    </b>
+                    <br>
+                    <i>
+                        นำมาผสมรวมกัน
+                    </i>
+                </p>
+                <img src="media/ingredients-white.png" class="bg2-pic">
+                <!--
+                <div class="button" id="ingredients">
+                Go!
+                </div>
+            -->
+            </div>
+        </a>
+
+        <a href="categories/services/services.html">
+            <div id="bg2-right" class="bg2-hover">
+                <p class="bg2-text">
+                    <b>
+                        การบริการ
+                    </b>
+                    <br>
+                    <i>
+                        เพื่อลูกค้าอันมีค่า
+                    </i>
+                </p>
+                <img src="media/coffee-cup.png" class="bg2-pic">
+                <!--
+                <div class="button" id="serving">
+                Go!
+                </div>
+            -->
+            </div>
+        </a>
+
+    </div>
+
+    <!--BG3-->
+    <div class="background">
+        <img src="media/coffee-table.jpg" id="bg3">
+
+        <div id="bg3-text1">
+            <p>
+                <b>I'd li-ke so-me mo-re coffee</b>
+            </p>
+            <p>
+                <i>- Kokoa Hoto</i>
+            </p>
+            <p>
+                <i>(保登 心愛)</i>
+            </p>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer" onclick="footerexpand()">
+        <p class="text-footer">
+            <a id="dev-link">
+                <u><b>นักพัฒนา</b></u>
+            </a>
+        </p>
+
+        <div class="w3-container" id="dev-footer">
+            
+            <b>TanakitInt</b>
+            <br>
+            <p>Front-end developer</p>
+
+            <b>TIVOLI</b>
+            <br>
+            <p>Feature developer</p>
+
+            <b>P.K.Stam</b>
+            <br>
+            <p>Data Assistance</p>
+                    
+        </div>
+
+        <p class="text-footer">
+            Copyright © 2018 TanakitInt. All rights reserved.
+        </p>
+
+    </div>
+
+    <!-- Back to top overlay -->
+    <div id="totop" onclick="totop()" class="ToTopOverlay">
+        T
+    </div>
+
+    <!--Nav bar-->
+    <div class="nav-bar" id="nav-bar-responsive">
+        <b>
+            <a href="index.html" class="active"> > หน้าหลัก </a>
+        </b>
+        <div class="nav-bar-left">
+            <a href="categories/benefits/benefits.html">ประโยชน์</a>
+            <a href="categories/tree/tree.html">ต้นกาแฟ</a>
+            <a href="categories/ingredients/ingredients.html">ส่วนประกอบ</a>
+            <a href="categories/services/services.html">การบริการ</a>
+        </div>
+         
+        <div class="nav-bar-right">
+            <a href="en/index.html">English</a>
+            <a href="jp/index.html">日本語</a>
+        </div> 
+
+    </div>
+
+</body>
+
+</html>

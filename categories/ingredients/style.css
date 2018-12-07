@@ -1,0 +1,452 @@
+/*--------------------------------------------------*/
+/*
+    CSS code by TanakitInt
+    Copyright (c) 2018 TanakitInt. All rights reserved.
+    "Fair use" applied.
+*/
+/*--------------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*insert local fonts*/
+
+@font-face {
+    font-family: "Wingdings 3";
+    src: url(../../media/fonts/WINGDING3.TTF) format("truetype");
+}
+
+
+body {
+    /*config webpage*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*No sliding left and right*/
+    overflow-x: hidden;
+    /*Delete body default margin*/
+    margin: unset;
+    background-color: #BCAAA4;
+}
+
+/*---------------------------------------------------*/
+/*
+    nav bar
+*/
+/*for 1201px and up*/
+@media screen and (min-width: 1201px) {
+    .nav-bar {
+        opacity: 0.75;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: left;
+        /*font-size: 1vw;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+        */ overflow: hidden;
+    }
+
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.5vw 0.75vw;
+            text-decoration: none;
+            font-size: 1.25vw;
+        }
+
+            .nav-bar a:hover {
+                background-color: #bcaaa4;
+                color: #000000;
+            }
+
+    .active {
+        background-color: #795548;
+        color: #ffffff;
+    }
+
+    .nav-bar-right {
+        float: right;
+    }
+
+    .nav-bar .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        opacity: 0.75;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: left;
+        /*font-size: 1em;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+        overflow: hidden;
+    }
+
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.5em 0.7em;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+            .nav-bar a:hover {
+                background-color: #bcaaa4;
+                color: #000000;
+            }
+
+    .active {
+        background-color: #795548;
+        color: #ffffff;
+    }
+
+    .nav-bar-right {
+        float: right;
+    }
+
+    .nav-bar .icon {
+        display: none;
+    }
+}
+
+/*---for responsive menu---*/
+/*960px and lower*/
+@media screen and (max-width: 960px) {
+    .nav-bar {
+        opacity: 0.75;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: left;
+        /*font-size: 1em;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+        overflow: hidden;
+    }
+
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.5em 0.7em;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+            .nav-bar a:hover {
+                background-color: #bcaaa4;
+                color: #000000;
+            }
+
+    .active {
+        background-color: #795548;
+        color: #ffffff;
+    }
+
+    .nav-bar-right {
+        float: right;
+    }
+
+        .nav-bar-right a {
+            display: block;
+        }
+
+    .nav-bar-left {
+        display: none;
+    }
+
+    .nav-bar .icon {
+        display: none;
+    }
+}
+
+/*---------------------------------------------------*/
+/*
+    declare background class
+*/
+.background {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/*---------------------------------------------------*/
+/*
+    content
+*/
+#text-top1
+{        
+    text-align: center;
+    font-size: 60px;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+    display: inline-block;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-top2 {
+    text-align: center;
+    font-size: 24px;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+    display: inline-block;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#top-picture
+{
+    width: 100%;
+    height: 100vh;
+    filter: brightness(30%);
+
+    display: block;
+    background-position: center;
+    object-fit: cover;
+}
+
+.content
+{
+    margin-top : 120px;
+    margin-bottom : 120px;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.main-header 
+{
+    font-size: 48px;
+    font-weight: bold;
+
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+}
+
+.sub-header
+{
+    font-size: 36px;
+    font-weight: normal;
+
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+}
+
+.text 
+{
+    font-size: 24px;
+    font-weight: normal;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+}
+
+.reference 
+{
+    font-size: 18px;
+    font-weight: normal;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Athiti', sans-serif;
+}
+
+/*------------------------------------------------*/
+/*
+    To top overlay
+*/
+@media screen and (min-width: 1201px) {
+    .ToTopOverlay {
+        text-align: center;
+        font-size: 1.25vw;
+        /*font-family: 'Roboto', sans-serif;*/
+        /*font-family: 'Athiti', sans-serif;*/
+        border-radius: 5%;
+        display: inline-block;
+        background-color: #af7b68;
+        border: none;
+        color: white;
+        padding: 1em 1.5em;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        font-family: "Wingdings 3";
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .ToTopOverlay:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ToTopOverlay {
+        text-align: center;
+        font-size: 1em;
+        /*font-family: 'Roboto', sans-serif;*/
+        /*font-family: 'Athiti', sans-serif;*/
+        border-radius: 5%;
+        display: inline-block;
+        background-color: #af7b68;
+        border: none;
+        color: white;
+        padding: 1em 1.5em;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        font-family: "Wingdings 3";
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+        .ToTopOverlay:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+        text-align: center;
+        font-size: 2.5vh;
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+        display: inline-block;
+        background-color: #795548;
+        border: none;
+        color: white;
+        padding: 0.5em 0.75em;
+        text-align: center;
+        text-decoration: none;
+        /*margin: 4px 10px;*/
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+}
+
+/*---------------------------------------------------*/
+/*  
+    footer  
+*/
+@media screen and (min-width: 1201px) {
+    .footer {
+        opacity: 0.8;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #795548;
+        color: #ffffff;
+        text-align: left;
+        font-size: 1vw;
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+    }
+
+    .text-footer {
+        padding-left: 1vw;
+    }
+
+    #dev-link {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        opacity: 0.8;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #795548;
+        color: #ffffff;
+        text-align: left;
+        font-size: 1em;
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Athiti', sans-serif;
+    }
+
+    .text-footer {
+        padding-left: 1em;
+    }
+
+    #dev-link {
+        color: #ffffff;
+    }
+}
+
+#dev-footer {
+    display: none;
+}
+
